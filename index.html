@@ -341,14 +341,14 @@ const CONFIG = {
   mainSiteLabel: "More art at jawsgraffiti.com",
 
   // CONTACT — leave "" until you have it. Nothing is invented.
-  email: "",                              // e.g. "you@example.com" → powers all "Inquire" buttons
+  email: "jawsatak47@gmail.com",                              // e.g. "you@example.com" → powers all "Inquire" buttons
   inquiryForm: { action: "" },            // optional: a Formspree/Netlify-style form URL (see README)
-  shopUrl: "",                            // optional general shop link for the footer
+  shopUrl: "jawsgraffiti.com",                            // optional general shop link for the footer
   social: [],                             // e.g. [{ label: "Instagram", url: "https://..." }]
   relatedCollections: [],                 // e.g. [{ label: "QuarkForce", url: "https://..." }]
 
   // IMAGES (put files in /images/)
-  logo: "",                               // e.g. "images/logo.svg" — if empty, the text wordmark is used
+  logo: "goldseal logo.png",                               // e.g. "images/logo.svg" — if empty, the text wordmark is used
   heroImage: "images/hero.jpg",           // optional; if missing, the hero shows a plate collage of your work
   artistImage: "images/artist.jpg",       // optional portrait / studio photo
   ogImage: "images/og-image.jpg",
@@ -384,13 +384,13 @@ const ARTWORKS = [
   // ---- THE SERIES ------------------------------------------------------
   // NOTE: titles, subjects, categories and "featured" below are PLACEHOLDERS — replace with the real ones.
   {
-    id: "series-001",
-    title: "Untitled No. 1",                 // PLACEHOLDER
-    subject: "",                             // species or subject, when known
+    id: "Graffiti-Birds",
+    title: "Osprey Graffiti",                 // PLACEHOLDER
+    subject: "Osprey",                             // species or subject, when known
     category: "birds",                       // PLACEHOLDER: birds | critters | insects
     group: "series",                         // "series" or "early"
     description: "",
-    digitalImage: "images/series-001-digital.jpg",
+    digitalImage: "iosprey.png",
     canvasImage: "images/series-001-canvas.jpg",   // photograph of the finished canvas
     digitalState: "ready",                   // ready | planned
     canvasState: "ready",                    // ready | planned | none
@@ -410,16 +410,16 @@ const ARTWORKS = [
     notes: ""                                // private reminders – never shown on the site
   },
   {
-    id: "series-002",
-    title: "Untitled No. 2",                 // PLACEHOLDER
-    subject: "",
-    category: "critters",                    // PLACEHOLDER
+    id: "Graffiti-Birds",
+    title: "Toucan Graffiti",                 // PLACEHOLDER
+    subject: "Toucan",
+    category: "bird",                    // PLACEHOLDER
     group: "series",
     description: "",
-    digitalImage: "images/series-002-digital.jpg",
+    digitalImage: "toucan.png",
     canvasImage: "",
     digitalState: "ready",
-    canvasState: "none",
+    canvasState: "painting",
     ratio: "4/5",
     featured: true,
     status: "print-available",
@@ -434,16 +434,16 @@ const ARTWORKS = [
     year: "", added: "", notes: ""
   },
   {
-    id: "series-003",
-    title: "Untitled No. 3",                 // PLACEHOLDER
-    subject: "",
+    id: "Graffiti-Birds",
+    title: "Macaw Graffiti",                 // PLACEHOLDER
+    subject: "Macaw",
     category: "birds",                       // PLACEHOLDER
     group: "series",
     description: "",
-    digitalImage: "images/series-003-digital.jpg",
+    digitalImage: "macaw.png",
     canvasImage: "",
     digitalState: "ready",
-    canvasState: "none",
+    canvasState: "canvas prepped",
     ratio: "4/5",
     featured: true,
     status: "print-available",
@@ -458,10 +458,10 @@ const ARTWORKS = [
     year: "", added: "", notes: ""
   },
   {
-    id: "series-004",
-    title: "In Development No. 4",           // PLACEHOLDER
-    subject: "",
-    category: "critters",                    // PLACEHOLDER
+    id: "Graffiti-MicroBugs",
+    title: "Scale Incect Crawler Graffiti",           // PLACEHOLDER
+    subject: "Scale Incect Crawler",
+    category: "insect",                    // PLACEHOLDER
     group: "series",
     description: "A planned 24 × 24 in work. Digital drawing and canvas painting are both still to come.",
     digitalImage: "",
@@ -470,7 +470,7 @@ const ARTWORKS = [
     canvasState: "planned",
     ratio: "1/1",
     featured: false,
-    status: "coming-soon",
+    status: "canvas prepped",
     formatStatus: {},
     medium: "Digital drawing",
     dimensions: "24 × 24 in",
@@ -482,9 +482,9 @@ const ARTWORKS = [
     year: "", added: "", notes: ""
   },
   {
-    id: "series-005",
-    title: "In Development No. 5",           // PLACEHOLDER
-    subject: "",
+    id: "Graffiti-MicroBugs",
+    title: "Fairy Wasp Graffiti",           // PLACEHOLDER
+    subject: "Fairy Wasp",
     category: "birds",                       // PLACEHOLDER
     group: "series",
     description: "A planned 24 × 24 in work. Digital drawing and canvas painting are both still to come.",
@@ -494,7 +494,7 @@ const ARTWORKS = [
     canvasState: "planned",
     ratio: "1/1",
     featured: false,
-    status: "coming-soon",
+    status: "canvas prepped",
     formatStatus: {},
     medium: "Digital drawing",
     dimensions: "24 × 24 in",
@@ -508,8 +508,8 @@ const ARTWORKS = [
 
   // ---- EARLIER WORK (pre-series, fits the collection) -------------------
   {
-    id: "early-critter-001", title: "Local Critter No. 1", subject: "", category: "critters", group: "early",
-    description: "", digitalImage: "images/early-critter-001.jpg", canvasImage: "",
+    id: "EBS-1", title: "Acorn Woodpecker", subject: "Acorn Woodpecker", category: "bird", group: "early",
+    description: "", digitalImage: "woodPecker copy.PNG", canvasImage: "",
     digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
     status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
     offered: ["artPrint"],
@@ -518,8 +518,8 @@ const ARTWORKS = [
     otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
   },
   {
-    id: "early-critter-002", title: "Local Critter No. 2", subject: "", category: "critters", group: "early",
-    description: "", digitalImage: "images/early-critter-002.jpg", canvasImage: "",
+    id: "EBS-2", title: "Blue Jay", subject: "Blue Jay", category: "bird", group: "early",
+    description: "", digitalImage: "blueJay copy.PNG", canvasImage: "",
     digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
     status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
     offered: ["artPrint"],
@@ -528,8 +528,8 @@ const ARTWORKS = [
     otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
   },
   {
-    id: "early-critter-003", title: "Local Critter No. 3", subject: "", category: "critters", group: "early",
-    description: "", digitalImage: "images/early-critter-003.jpg", canvasImage: "",
+    id: "EBS-3", title: "MeadowLark", subject: "MeadowLark", category: "bird", group: "early",
+    description: "", digitalImage: "meadowLark copy.PNG", canvasImage: "",
     digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
     status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
     offered: ["artPrint"],
@@ -538,8 +538,8 @@ const ARTWORKS = [
     otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
   },
   {
-    id: "early-critter-004", title: "Local Critter No. 4", subject: "", category: "critters", group: "early",
-    description: "", digitalImage: "images/early-critter-004.jpg", canvasImage: "",
+    id: "EBS-4", title: "Owl", subject: "Owl", category: "bird", group: "early",
+    description: "", digitalImage: "Owl copy.PNG", canvasImage: "",
     digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
     status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
     offered: ["artPrint"],
@@ -548,8 +548,8 @@ const ARTWORKS = [
     otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
   },
   {
-    id: "early-critter-005", title: "Local Critter No. 5", subject: "", category: "critters", group: "early",
-    description: "", digitalImage: "images/early-critter-005.jpg", canvasImage: "",
+    id: "EBS-5", title: "Turkey", subject: "Turkey", category: "bird", group: "early",
+    description: "", digitalImage: "turkey copy.png", canvasImage: "",
     digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
     status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
     offered: ["artPrint"],
@@ -558,8 +558,28 @@ const ARTWORKS = [
     otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
   },
   {
-    id: "early-bird-001", title: "Bird Graffiti Print", subject: "", category: "birds", group: "early",
-    description: "A bird drawn in a graffiti style.", digitalImage: "images/early-bird-001.jpg", canvasImage: "",
+    id: "EBS-6", title: "Hare", subject: "Hare", category: "critter", group: "early",
+    description: "", digitalImage: "hare copy.png", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "17/22", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital print", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["graffiti", "early work"], year: "", added: "", notes: ""
+  },
+   {
+    id: "EBS-7", title: "Racoon", subject: "Racoon", category: "critter", group: "early",
+    description: "", digitalImage: "raccoon copy.png", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "17/22", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital print", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["graffiti", "early work"], year: "", added: "", notes: ""
+  },
+   {
+    id: "EBS-8", title: "JawsGraffitiToucan", subject: "Toucan", category: "Graffiti-Bird", group: "early",
+    description: "", digitalImage: "JawsToucan.png", canvasImage: "",
     digitalState: "ready", canvasState: "none", ratio: "17/22", featured: false,
     status: "print-available", formatStatus: {}, medium: "Digital print", dimensions: "8.5 × 11 in",
     offered: ["artPrint"],
