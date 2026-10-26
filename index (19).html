@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Notes — Original Wildlife &amp; Creature Artwork | JawsAtak</title>
+<meta name="description" content="Field Notes is a collection of birds, small creatures and wildlife by JawsAtak (Anthony Vella): digital drawings developed into canvas paintings.">
+
+<!-- ===== SEO / SHARING — REPLACE the YOUR-DOMAIN values before launch (crawlers do not run JavaScript) ===== -->
+<!-- <link rel="canonical" href="https://YOUR-DOMAIN.example/"> -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Field Notes — Original Wildlife &amp; Creature Artwork | JawsAtak">
+<meta property="og:description" content="Birds, small creatures and wildlife: digital drawings developed into canvas paintings by JawsAtak (Anthony Vella).">
+<!-- <meta property="og:image" content="https://YOUR-DOMAIN.example/images/og-image.jpg"> -->
+<!-- <meta property="og:url" content="https://YOUR-DOMAIN.example/"> -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Field Notes — Original Wildlife &amp; Creature Artwork | JawsAtak">
+<meta name="twitter:description" content="Birds, small creatures and wildlife: digital drawings developed into canvas paintings.">
+<meta name="theme-color" content="#f5f0e6">
+<!-- Favicon: this inline one is a stand-in. To use your own, replace with: <link rel="icon" href="images/favicon.png"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231e1e1b'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' font-style='italic' text-anchor='middle' fill='%23f5f0e6'%3EJ%3C/text%3E%3C/svg%3E">
+
+<style>
+/* =====================================================================
+   STYLES — palette & type live in the :root variables below
+   ===================================================================== */
+:root{
+  --ivory:#f5f0e6; --paper:#ece5d6; --mat:#faf7f0;
+  --ink:#1e1e1b; --ink-2:#4a4a44; --olive:#5f6540; --mineral:#5d6665;
+  --brown:#6a4e3a; --accent:#94472a; --line:rgba(30,30,27,.16);
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --maxw:1280px; --gut:clamp(1rem,4vw,2.5rem); --header-h:72px;
+}
+*{box-sizing:border-box}
+html{background:var(--ivory);scroll-padding-top:calc(var(--header-h) + 12px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;font-family:var(--sans);color:var(--ink);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}
+/* subtle paper grain, sits behind everything */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .25 0 0 0 0 .2 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.15;margin:0}
+p{margin:0 0 1em}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mineral);font-weight:600}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--ivory);padding:.7rem 1rem;z-index:200}
+.skip:focus{left:0}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;font:600 .78rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;
+  padding:.95rem 1.4rem;border:1.5px solid var(--ink);background:var(--ink);color:var(--ivory);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
+.btn.sm{padding:.7rem 1rem;font-size:.7rem}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.5;cursor:not-allowed;background:transparent;color:var(--ink-2);border-color:var(--line)}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(245,240,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:var(--header-h);gap:1rem}
+.wordmark{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.wordmark img{height:36px;width:auto}
+.wm-studio{font:700 .85rem/1 var(--sans);letter-spacing:.34em;text-transform:uppercase}
+.wm-rule{width:1px;height:26px;background:var(--ink);opacity:.4}
+.wm-coll{font:italic 500 1.2rem/1 var(--serif)}
+.nav{display:flex;flex-wrap:wrap;gap:.2rem 1.15rem;align-items:center}
+.nav a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:.5rem 0;font-weight:600;color:var(--ink-2);border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--ink);border-color:var(--accent)}
+.nav-toggle{display:none;background:none;border:1.5px solid var(--ink);padding:.55rem .8rem;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+@media (max-width:1280px){
+  .nav-toggle{display:block}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ivory);flex-direction:column;align-items:stretch;padding:.5rem var(--gut) 1rem;border-bottom:1px solid var(--line);gap:0}
+  .nav.open{display:flex}
+  .nav a{padding:.85rem 0;border-bottom:1px solid var(--line);font-size:.8rem}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(2.5rem,6vw,5rem) 0 clamp(2rem,5vw,4rem)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);letter-spacing:-.02em;font-style:italic;margin:.9rem 0 1.2rem}
+.hero .lede{font:400 clamp(1.05rem,1.6vw,1.25rem)/1.6 var(--serif);color:var(--ink-2);max-width:34em}
+.hero .by{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin:1.4rem 0 1.8rem;font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.plates{display:flex;gap:clamp(.6rem,1.6vw,1.2rem);align-items:flex-start;justify-content:center}
+.plate{flex:1 1 0;min-width:0;background:var(--mat);border:1px solid var(--line);padding:.6rem;box-shadow:0 14px 30px -18px rgba(30,30,27,.5)}
+.plate:nth-child(2){margin-top:2.6rem}
+.plate:nth-child(3){margin-top:1rem}
+.plate .frame{aspect-ratio:4/5;display:flex}
+.plate img{width:100%;height:100%;object-fit:contain}
+.plate figcaption{font:600 .62rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mineral);padding-top:.55rem}
+.hero-single{background:var(--mat);border:1px solid var(--line);padding:.8rem;box-shadow:0 18px 40px -22px rgba(30,30,27,.55)}
+.hero-single img{width:100%;height:auto;max-height:78vh;object-fit:contain}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.plate:nth-child(2),.plate:nth-child(3){margin-top:0}}
+
+/* ---------- sections ---------- */
+section.block{padding:clamp(3rem,7vw,6rem) 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+.sec-head h2{font-size:clamp(1.9rem,4vw,3rem);font-style:italic;margin-top:.5rem}
+.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(2rem,5vw,4rem)}
+.intro p{font:400 1.12rem/1.75 var(--serif);color:var(--ink-2)}
+.process{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.process li{display:flex;gap:1rem;padding:1.1rem 0;border-bottom:1px solid var(--line);align-items:baseline}
+.process .n{font:italic 500 1.5rem var(--serif);color:var(--accent);min-width:2ch}
+.process strong{display:block;font:600 .74rem var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.process span.d{color:var(--ink-2);font-size:.95rem}
+.glance{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.4rem}
+.glance div{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mineral);font-weight:600}
+.glance b{display:block;font:500 2rem/1 var(--serif);color:var(--ink);letter-spacing:0;text-transform:none;margin-bottom:.2rem}
+@media (max-width:860px){.intro{grid-template-columns:1fr}}
+
+/* ---------- toolbar ---------- */
+.toolbar{display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;padding-bottom:1.4rem;border-bottom:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{font:600 .72rem var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:.6rem .95rem;border:1.5px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;border-radius:999px}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--ivory)}
+.chip small{opacity:.7;margin-left:.3rem;font-weight:500}
+.tools{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+.tools label{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--mineral)}
+.tools input,.tools select,.form input,.form select,.form textarea{font:400 .95rem var(--sans);padding:.7rem .85rem;border:1.5px solid var(--line);background:var(--mat);color:var(--ink);border-radius:0}
+.tools input{min-width:min(100%,280px);flex:1 1 240px}
+.count{margin-left:auto;font-size:.85rem;color:var(--ink-2)}
+
+/* ---------- artwork cards ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:2.4rem 1.8rem}
+.grid.feat{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.card{display:flex;flex-direction:column;animation:rise .5s both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.card{animation:none}*{transition:none!important}}
+.card-media{all:unset;box-sizing:border-box;cursor:pointer;display:block;background:var(--mat);border:1px solid var(--line);padding:.9rem;aspect-ratio:4/5;transition:transform .25s,box-shadow .25s}
+.card-media:hover{transform:translateY(-3px);box-shadow:0 16px 28px -20px rgba(30,30,27,.6)}
+.card-media:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.card-media img{width:100%;height:100%;object-fit:contain}
+.card-body{padding-top:.9rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.kicker{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mineral);font-weight:600}
+.card h3{font-size:1.3rem;overflow-wrap:anywhere}
+.subject{font:italic 400 .98rem var(--serif);color:var(--ink-2)}
+.meta{font-size:.82rem;color:var(--ink-2)}
+.price{font:500 1.05rem var(--serif)}
+.card-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:auto;padding-top:.7rem}
+.badge{display:inline-block;font:700 .62rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:.35rem .55rem;border:1.5px solid currentColor;align-self:flex-start}
+.s-available{background:var(--olive);color:var(--ivory);border-color:var(--olive)}
+.s-made-to-order{background:var(--brown);color:var(--ivory);border-color:var(--brown)}
+.s-print-available{color:var(--olive)}
+.s-contact-for-price{color:var(--ink-2)}
+.s-reserved{background:#8a6a2f;color:#fff;border-color:#8a6a2f}
+.s-coming-soon{background:var(--mineral);color:#fff;border-color:var(--mineral)}
+.s-sold{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.empty{text-align:center;padding:4rem 1rem;border:1px dashed var(--line)}
+.empty h3{font-style:italic;font-size:1.6rem;margin-bottom:.6rem}
+
+/* ---------- artist / contact ---------- */
+.artist{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.artist .portrait{background:var(--mat);border:1px solid var(--line);padding:.8rem}
+.artist .portrait img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.artist p{font:400 1.1rem/1.75 var(--serif);color:var(--ink-2)}
+@media (max-width:860px){.artist{grid-template-columns:1fr}}
+.inq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.5rem}
+.inq{border:1px solid var(--line);background:var(--mat);padding:1.3rem;display:flex;flex-direction:column;gap:.6rem}
+.inq h3{font-size:1.15rem}.inq p{font-size:.9rem;color:var(--ink-2);margin:0}
+.inq .btn{margin-top:auto;align-self:flex-start}
+.notice{border-left:3px solid var(--accent);background:var(--mat);padding:1rem 1.2rem;margin-top:1.5rem;font-size:.92rem}
+.form{display:grid;gap:.9rem;max-width:620px;margin-top:2rem}
+.form label{display:grid;gap:.35rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--mineral)}
+.form textarea{min-height:140px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:var(--ivory);padding:3.5rem 0 2rem;margin-top:2rem}
+footer a{color:var(--ivory);opacity:.85}footer a:hover{opacity:1}
+.foot-grid{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:2rem}
+footer h4{font:700 .7rem var(--sans);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1rem;opacity:.65}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem;font-size:.92rem}
+.foot-bottom{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid rgba(245,240,230,.2);font-size:.8rem;opacity:.75;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+@media (max-width:860px){.foot-grid{grid-template-columns:1fr 1fr}}
+.totop{position:fixed;right:1rem;bottom:1rem;z-index:50;width:46px;height:46px;border-radius:50%;border:1.5px solid var(--ink);background:var(--ivory);cursor:pointer;font-size:1.2rem;display:none}
+.totop.show{display:block}
+
+/* ---------- dialogs ---------- */
+dialog{border:0;padding:0;background:var(--ivory);color:var(--ink);max-width:min(1180px,96vw);width:100%;max-height:94vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(20,20,17,.78)}
+.dlg-close{position:sticky;top:0;float:right;z-index:5;margin:.8rem .8rem 0 0;background:var(--ivory);border:1.5px solid var(--ink);padding:.55rem .85rem;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;color:var(--ink)}
+.dt{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(1.5rem,3vw,3rem);padding:clamp(1.2rem,3vw,2.6rem);clear:both}
+.dt-views{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.dt-figs{display:grid;gap:1rem}
+.dt-figs.two{grid-template-columns:1fr 1fr}
+.dt-fig{margin:0;background:var(--mat);border:1px solid var(--line);padding:.8rem}
+.dt-fig button{all:unset;display:block;width:100%;cursor:zoom-in}
+.dt-fig button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.dt-fig img{width:100%;height:auto;max-height:72vh;object-fit:contain;margin:0 auto}
+.dt-fig figcaption{font:600 .66rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mineral);padding-top:.6rem}
+.dt h2{font-size:clamp(1.9rem,3.5vw,2.7rem);font-style:italic;margin:.5rem 0 .3rem;overflow-wrap:anywhere}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.2rem;margin:1.2rem 0;font-size:.92rem;border-top:1px solid var(--line);padding-top:1rem}
+.dl dt{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--mineral);padding-top:.15rem}
+.dl dd{margin:0}
+.fmt{border:1px solid var(--line);background:var(--mat);padding:1rem;display:grid;gap:.5rem;margin-bottom:.7rem}
+.fmt-top{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;flex-wrap:wrap}
+.fmt strong{font:600 .74rem var(--sans);letter-spacing:.12em;text-transform:uppercase}
+.fmt .btn{justify-self:start}
+.related{grid-column:1/-1;border-top:1px solid var(--line);padding-top:1.4rem}
+.rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:1rem;margin-top:.8rem}
+.rel{all:unset;box-sizing:border-box;cursor:pointer;display:grid;gap:.4rem}
+.rel:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.rel .t{background:var(--mat);border:1px solid var(--line);padding:.4rem;aspect-ratio:4/5;display:flex}
+.rel img{width:100%;height:100%;object-fit:contain}
+.rel span.n{font:500 .95rem var(--serif)}
+#lightbox{max-width:100vw;width:100vw;max-height:100vh;height:100vh;background:#141411;color:var(--ivory)}
+#lightbox .dlg-close{background:#141411;color:var(--ivory);border-color:var(--ivory)}
+#lightbox .lb{display:grid;place-items:center;min-height:100vh;padding:3.5rem 1rem 1rem;gap:.8rem;text-align:center}
+#lightbox img{max-width:96vw;max-height:84vh;object-fit:contain;margin:auto;cursor:zoom-out}
+#lightbox p{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin:0;opacity:.8}
+@media (max-width:860px){
+  dialog:not(#lightbox){max-width:100vw;max-height:100dvh;height:100dvh}
+  .dt{grid-template-columns:1fr}.dt-figs.two{grid-template-columns:1fr}
+}
+</style>
+
+<script type="application/ld+json" id="ld-json">{}</script>
+</head>
+<body>
+<a class="skip" href="#gallery">Skip to the artwork</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="#top" id="wordmark" aria-label="Back to top"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Primary"></nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 id="hero-title"></h1>
+        <p class="lede" id="hero-lede"></p>
+        <p class="by" id="hero-by"></p>
+        <div class="hero-actions" id="hero-actions"></div>
+      </div>
+      <div id="hero-media" aria-label="Selected artwork from the collection"></div>
+    </div>
+  </section>
+
+  <section class="block" id="collection" aria-labelledby="intro-title">
+    <div class="wrap intro">
+      <div>
+        <p class="eyebrow">The Collection</p>
+        <h2 id="intro-title" style="font-size:clamp(1.9rem,4vw,3rem);font-style:italic;margin:.5rem 0 1.4rem"></h2>
+        <div id="intro-text"></div>
+        <div class="glance" id="glance"></div>
+      </div>
+      <ol class="process" id="process" aria-label="How each work develops"></ol>
+    </div>
+  </section>
+
+  <section class="block" id="featured" aria-labelledby="feat-title" hidden>
+    <div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Selected</p><h2 id="feat-title">Featured Artwork</h2></div></div>
+      <div class="grid feat" id="featGrid"></div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery" aria-labelledby="gal-title">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="eyebrow">Browse</p><h2 id="gal-title">All Artwork</h2></div></div>
+      <div class="toolbar">
+        <div class="chips" id="chips" role="group" aria-label="Filter artwork"></div>
+        <div class="tools">
+          <label for="q" class="sr-only">Search artwork</label>
+          <input type="search" id="q" placeholder="Search title, species or tag" autocomplete="off">
+          <label for="sort">Sort</label>
+          <select id="sort">
+            <option value="curated">Curated order</option>
+            <option value="newest">Newest</option>
+            <option value="title">Title A–Z</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+          <span class="count" id="count" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <h3>Nothing matches that search.</h3>
+        <p>Try a different word, or clear the filters to see the whole collection.</p>
+        <button class="btn ghost sm" id="reset" type="button">Show all artwork</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="artist" aria-labelledby="artist-title">
+    <div class="wrap artist">
+      <div class="portrait" id="portrait"></div>
+      <div>
+        <p class="eyebrow">The Artist</p>
+        <h2 id="artist-title" style="font-size:clamp(1.9rem,4vw,3rem);font-style:italic;margin:.5rem 0 1.4rem"></h2>
+        <div id="bio"></div>
+        <p id="artist-link"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <p class="eyebrow">Collectors &amp; Inquiries</p>
+      <h2 id="contact-title" style="font-size:clamp(1.9rem,4vw,3rem);font-style:italic;margin:.5rem 0 .8rem">Acquire or Enquire</h2>
+      <p style="max-width:40em;color:var(--ink-2)">Interested in an original canvas, a print, a commission, or working together? Choose the kind of inquiry below.</p>
+      <div class="inq-grid" id="inqGrid"></div>
+      <div id="inqExtra"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid" id="footGrid"></div>
+    <div class="foot-bottom"><span id="copyright"></span><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+<button class="totop" id="totop" type="button" aria-label="Back to top">↑</button>
+
+<dialog id="detail" aria-label="Artwork details"></dialog>
+<dialog id="lightbox" aria-label="Enlarged image"></dialog>
+
+<!-- =====================================================================
+     ★ 1. SITE SETTINGS — edit this block for names, links, contact, bio
+     ===================================================================== -->
+<script>
+const CONFIG = {
+  studioName: "JawsAtak",
+  artistName: "Anthony Vella",
+  collectionName: "Field Notes",          // WORKING TITLE — change freely
+  collectionTagline: "Birds, small creatures and wildlife, drawn digitally and developed into canvas.",
+  heroEyebrow: "A collection of original artwork",
+
+  mainSiteUrl: "https://jawsgraffiti.com/",
+  mainSiteLabel: "More art at jawsgraffiti.com",
+
+  // CONTACT — leave "" until you have it. Nothing is invented.
+  email: "",                              // e.g. "you@example.com" → powers all "Inquire" buttons
+  inquiryForm: { action: "" },            // optional: a Formspree/Netlify-style form URL (see README)
+  shopUrl: "",                            // optional general shop link for the footer
+  social: [],                             // e.g. [{ label: "Instagram", url: "https://..." }]
+  relatedCollections: [],                 // e.g. [{ label: "QuarkForce", url: "https://..." }]
+
+  // IMAGES (put files in /images/)
+  logo: "",                               // e.g. "images/logo.svg" — if empty, the text wordmark is used
+  heroImage: "images/hero.jpg",           // optional; if missing, the hero shows a plate collage of your work
+  artistImage: "images/artist.jpg",       // optional portrait / studio photo
+  ogImage: "images/og-image.jpg",
+
+  siteUrl: "",                            // e.g. "https://yourname.github.io/field-notes/" — used for structured data
+  copyrightYear: 2026,
+
+  introParagraphs: [
+    "This collection begins with drawing. Each piece starts as a digital illustration built on close looking at a single bird, creature or insect — its posture, its line, its texture and the small things that make that individual different from the next.",
+    "From there, selected drawings are developed into physical canvas paintings. The digital drawing and the finished canvas are shown side by side wherever both exist, so you can see how one becomes the other."
+  ],
+  process: [
+    { title: "Observe & draw", text: "A digital drawing, made from careful observation of the subject." },
+    { title: "Develop on canvas", text: "Selected drawings are developed into canvas paintings, shown alongside the original drawing." },
+    { title: "Collect", text: "Available formats are listed on each artwork page." }
+  ],
+
+  artistBio: [
+    "JawsAtak is the working name of Anthony Vella, a multidisciplinary artist based in Medford, Oregon. His practice spans more than twenty years of graffiti, street art, lettering, sign painting and gold leaf, along with drawing and illustration.",
+    "This collection carries that background into quieter subjects. The same attention to line, form and character that drives lettering and street work is applied here to birds, small creatures and insects — moving from digital drawing to physical canvas as part of one continuous practice."
+  ]
+};
+</script>
+
+<!-- =====================================================================
+     ★ 2. ARTWORK DATA — the ONLY place you edit to add / change / sell art
+     To add a piece: copy one { ... } block, paste it, change the id and details.
+     Order here = "Curated order" on the site. See README.md for every field.
+     ===================================================================== -->
+<script>
+const ARTWORKS = [
+
+  // ---- THE SERIES ------------------------------------------------------
+  // NOTE: titles, subjects, categories and "featured" below are PLACEHOLDERS — replace with the real ones.
+  {
+    id: "series-001",
+    title: "Untitled No. 1",                 // PLACEHOLDER
+    subject: "",                             // species or subject, when known
+    category: "birds",                       // PLACEHOLDER: birds | critters | insects
+    group: "series",                         // "series" or "early"
+    description: "",
+    digitalImage: "images/series-001-digital.jpg",
+    canvasImage: "images/series-001-canvas.jpg",   // photograph of the finished canvas
+    digitalState: "ready",                   // ready | planned
+    canvasState: "ready",                    // ready | planned | none
+    ratio: "4/5",                            // shape of the artwork (width/height) – used for placeholders
+    featured: true,
+    status: "contact-for-price",             // available | sold | reserved | coming-soon | made-to-order | print-available | contact-for-price
+    formatStatus: {},                        // optional per-format status, e.g. { originalCanvas: "sold" }
+    medium: "Digital drawing",
+    dimensions: "16 × 20 in",
+    offered: ["originalCanvas", "artPrint"], // formats you actually offer
+    prices:        { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "",
+    tags: ["wildlife", "series"],
+    year: "",
+    added: "",                               // optional YYYY-MM-DD, drives "Newest"
+    notes: ""                                // private reminders – never shown on the site
+  },
+  {
+    id: "series-002",
+    title: "Untitled No. 2",                 // PLACEHOLDER
+    subject: "",
+    category: "critters",                    // PLACEHOLDER
+    group: "series",
+    description: "",
+    digitalImage: "images/series-002-digital.jpg",
+    canvasImage: "",
+    digitalState: "ready",
+    canvasState: "none",
+    ratio: "4/5",
+    featured: true,
+    status: "print-available",
+    formatStatus: {},
+    medium: "Digital drawing",
+    dimensions: "16 × 20 in",
+    offered: ["artPrint"],
+    prices:        { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "",
+    tags: ["wildlife", "series"],
+    year: "", added: "", notes: ""
+  },
+  {
+    id: "series-003",
+    title: "Untitled No. 3",                 // PLACEHOLDER
+    subject: "",
+    category: "birds",                       // PLACEHOLDER
+    group: "series",
+    description: "",
+    digitalImage: "images/series-003-digital.jpg",
+    canvasImage: "",
+    digitalState: "ready",
+    canvasState: "none",
+    ratio: "4/5",
+    featured: true,
+    status: "print-available",
+    formatStatus: {},
+    medium: "Digital drawing",
+    dimensions: "16 × 20 in",
+    offered: ["artPrint"],
+    prices:        { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "",
+    tags: ["wildlife", "series"],
+    year: "", added: "", notes: ""
+  },
+  {
+    id: "series-004",
+    title: "In Development No. 4",           // PLACEHOLDER
+    subject: "",
+    category: "critters",                    // PLACEHOLDER
+    group: "series",
+    description: "A planned 24 × 24 in work. Digital drawing and canvas painting are both still to come.",
+    digitalImage: "",
+    canvasImage: "",
+    digitalState: "planned",
+    canvasState: "planned",
+    ratio: "1/1",
+    featured: false,
+    status: "coming-soon",
+    formatStatus: {},
+    medium: "Digital drawing",
+    dimensions: "24 × 24 in",
+    offered: [],
+    prices:        { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "",
+    tags: ["wildlife", "series", "planned"],
+    year: "", added: "", notes: ""
+  },
+  {
+    id: "series-005",
+    title: "In Development No. 5",           // PLACEHOLDER
+    subject: "",
+    category: "birds",                       // PLACEHOLDER
+    group: "series",
+    description: "A planned 24 × 24 in work. Digital drawing and canvas painting are both still to come.",
+    digitalImage: "",
+    canvasImage: "",
+    digitalState: "planned",
+    canvasState: "planned",
+    ratio: "1/1",
+    featured: false,
+    status: "coming-soon",
+    formatStatus: {},
+    medium: "Digital drawing",
+    dimensions: "24 × 24 in",
+    offered: [],
+    prices:        { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "",
+    tags: ["wildlife", "series", "planned"],
+    year: "", added: "", notes: ""
+  },
+
+  // ---- EARLIER WORK (pre-series, fits the collection) -------------------
+  {
+    id: "early-critter-001", title: "Local Critter No. 1", subject: "", category: "critters", group: "early",
+    description: "", digitalImage: "images/early-critter-001.jpg", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
+  },
+  {
+    id: "early-critter-002", title: "Local Critter No. 2", subject: "", category: "critters", group: "early",
+    description: "", digitalImage: "images/early-critter-002.jpg", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
+  },
+  {
+    id: "early-critter-003", title: "Local Critter No. 3", subject: "", category: "critters", group: "early",
+    description: "", digitalImage: "images/early-critter-003.jpg", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
+  },
+  {
+    id: "early-critter-004", title: "Local Critter No. 4", subject: "", category: "critters", group: "early",
+    description: "", digitalImage: "images/early-critter-004.jpg", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
+  },
+  {
+    id: "early-critter-005", title: "Local Critter No. 5", subject: "", category: "critters", group: "early",
+    description: "", digitalImage: "images/early-critter-005.jpg", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital drawing", dimensions: "8 × 10 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["local", "early work"], year: "", added: "", notes: ""
+  },
+  {
+    id: "early-bird-001", title: "Bird Graffiti Print", subject: "", category: "birds", group: "early",
+    description: "A bird drawn in a graffiti style.", digitalImage: "images/early-bird-001.jpg", canvasImage: "",
+    digitalState: "ready", canvasState: "none", ratio: "17/22", featured: false,
+    status: "print-available", formatStatus: {}, medium: "Digital print", dimensions: "8.5 × 11 in",
+    offered: ["artPrint"],
+    prices: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    purchaseLinks: { originalCanvas: "", canvasPrint: "", artPrint: "", other: "" },
+    otherLabel: "", tags: ["graffiti", "early work"], year: "", added: "", notes: ""
+  }
+];
+</script>
+
+<!-- =====================================================================
+     3. SITE ENGINE — you normally don't need to edit below this line
+     ===================================================================== -->
+<script>
+(function () {
+  "use strict";
+
+  /* ---------- helpers ---------- */
+  const $ = (s, r) => (r || document).querySelector(s);
+  function h(tag, props, ...kids) {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(props || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? "" : v);
+    }
+    for (const kid of kids.flat()) { if (kid == null || kid === false) continue; el.append(kid); }
+    return el;
+  }
+  const clear = el => { while (el.firstChild) el.removeChild(el.firstChild); return el; };
+  const str = v => (v == null ? "" : String(v).trim());
+  function safeUrl(u, allowMail) {
+    u = str(u); if (!u) return "";
+    try {
+      const p = new URL(u);
+      if (p.protocol === "https:" || p.protocol === "http:") return p.href;
+      if (allowMail && p.protocol === "mailto:") return p.href;
+    } catch (e) {}
+    return "";
+  }
+  const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cap = s => s.replace(/(^|[\s-])\w/g, m => m.toUpperCase());
+
+  /* ---------- vocab ---------- */
+  const STATUS = {
+    "available":         { label: "Available",         buy: true },
+    "made-to-order":     { label: "Made to Order",     buy: true },
+    "print-available":   { label: "Print Available",   buy: true },
+    "contact-for-price": { label: "Contact for Price", buy: false },
+    "reserved":          { label: "Reserved",          buy: false },
+    "coming-soon":       { label: "Coming Soon",       buy: false },
+    "sold":              { label: "Sold",              buy: false }
+  };
+  const FORMATS = { originalCanvas: "Original canvas painting", canvasPrint: "Canvas reproduction", artPrint: "Art print", other: "Other" };
+  const CAT_LABELS = { birds: "Birds", critters: "Critters", insects: "Insects" };
+  const catLabel = c => CAT_LABELS[c] || cap(c || "Uncategorized");
+
+  /* ---------- normalise data ---------- */
+  const seen = new Set();
+  const ART = [];
+  (Array.isArray(ARTWORKS) ? ARTWORKS : []).forEach((raw, i) => {
+    const id = str(raw && raw.id);
+    if (!id) { console.warn("Artwork #" + (i + 1) + " has no id and was skipped."); return; }
+    if (seen.has(id)) { console.warn('Duplicate artwork id "' + id + '" skipped. Every id must be unique.'); return; }
+    seen.add(id);
+    const a = Object.assign({
+      title: "Untitled", subject: "", category: "", group: "series", description: "", digitalImage: "", canvasImage: "",
+      digitalState: "ready", canvasState: "none", ratio: "4/5", featured: false, status: "contact-for-price", formatStatus: {},
+      medium: "", dimensions: "", offered: [], prices: {}, purchaseLinks: {}, otherLabel: "", tags: [], year: "", added: "", notes: ""
+    }, raw);
+    a.id = id; a._i = i;
+    a.category = str(a.category).toLowerCase();
+    if (!STATUS[a.status]) a.status = "contact-for-price";
+    a.tags = (Array.isArray(a.tags) ? a.tags : []).map(t => str(t).toLowerCase()).filter(Boolean);
+    a.prices = a.prices || {}; a.purchaseLinks = a.purchaseLinks || {}; a.formatStatus = a.formatStatus || {};
+    const off = new Set(Array.isArray(a.offered) ? a.offered : []);
+    Object.keys(FORMATS).forEach(k => { if (str(a.prices[k]) || safeUrl(a.purchaseLinks[k])) off.add(k); });
+    a.offered = Object.keys(FORMATS).filter(k => off.has(k));
+    ART.push(a);
+  });
+  const byId = id => ART.find(a => a.id === id);
+  const effStatus = (a, k) => (STATUS[a.formatStatus[k]] ? a.formatStatus[k] : a.status);
+  const hasCanvasPhoto = a => a.canvasState === "ready" && !!str(a.canvasImage);
+  const fmtLabel = (a, k) => (k === "other" ? (str(a.otherLabel) || "Other") : FORMATS[k]);
+
+  function money(v) {
+    v = str(v); if (!v) return "";
+    return /^[\d,]+(\.\d{1,2})?$/.test(v) ? "$" + v : v;
+  }
+  function priceNum(v) { const n = parseFloat(str(v).replace(/[^0-9.]/g, "")); return isFinite(n) && n > 0 ? n : null; }
+  function priceSummary(a) {
+    const vals = a.offered.map(k => ({ k, t: money(a.prices[k]), n: priceNum(a.prices[k]) })).filter(x => x.t);
+    if (!vals.length) return "";
+    if (vals.length === 1) return vals[0].t;
+    const nums = vals.filter(x => x.n).sort((x, y) => x.n - y.n);
+    return nums.length ? "From " + money(String(nums[0].n)) : vals[0].t;
+  }
+  function minPrice(a) { const n = a.offered.map(k => priceNum(a.prices[k])).filter(Boolean); return n.length ? Math.min.apply(null, n) : null; }
+
+  function workLine(a) {
+    const dp = a.digitalState === "planned", cr = a.canvasState === "ready", cp = a.canvasState === "planned";
+    if (dp && cp) return "Digital drawing + canvas painting · planned";
+    if (cr) return "Digital drawing + canvas painting";
+    if (cp) return "Digital drawing · canvas planned";
+    return str(a.medium) || "Digital drawing";
+  }
+  function formatsLine(a) { return a.offered.map(k => fmtLabel(a, k)).join(" · "); }
+
+  /* ---------- images & placeholders ---------- */
+  const esc = s => String(s).replace(/[<>&"']/g, c => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" }[c]));
+  function parseRatio(r) { const p = str(r).split(/[\/:x×]/).map(parseFloat); return p.length === 2 && p[0] > 0 && p[1] > 0 ? p : [4, 5]; }
+  function placeholder(a, kind, src) {
+    const [w, hh] = parseRatio(a.ratio), W = 800, H = Math.round(W * hh / w);
+    const planned = kind === "digital" && a.digitalState === "planned";
+    const l1 = planned ? "IN DEVELOPMENT" : "TEMPORARY PLACEHOLDER";
+    const l2 = planned ? "Artwork planned — image to come" : (kind === "canvas" ? "Canvas photo not added yet" : "Artwork image not added yet");
+    const l3 = src && !planned ? src : "";
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + W + " " + H + '"><defs><pattern id="p" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="16" stroke="#b9b29f" stroke-width="2"/></pattern></defs>' +
+      '<rect width="100%" height="100%" fill="#e4dccb"/><rect width="100%" height="100%" fill="url(#p)" opacity=".45"/>' +
+      '<rect x="' + (W / 2 - 300) + '" y="' + (H / 2 - 70) + '" width="600" height="140" fill="#f5f0e6"/>' +
+      '<g font-family="Arial,sans-serif" text-anchor="middle" fill="#1e1e1b"><text x="' + W / 2 + '" y="' + (H / 2 - 18) + '" font-size="27" font-weight="700" letter-spacing="4">' + esc(l1) + "</text>" +
+      '<text x="' + W / 2 + '" y="' + (H / 2 + 16) + '" font-size="21" fill="#4a4a44">' + esc(l2) + "</text>" +
+      '<text x="' + W / 2 + '" y="' + (H / 2 + 48) + '" font-size="18" fill="#5d6665">' + esc(l3) + "</text></g></svg>";
+    return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+  }
+  function artImg(a, kind, alt, eager) {
+    const src = str(kind === "canvas" ? a.canvasImage : a.digitalImage);
+    const ph = placeholder(a, kind, src);
+    const im = h("img", { alt: alt, decoding: "async" });
+    if (!eager) im.setAttribute("loading", "lazy");
+    im.addEventListener("error", () => { if (im.dataset.fb) return; im.dataset.fb = "1"; im.src = ph; });
+    im.src = src && a.digitalState !== "planned" || (src && kind === "canvas") ? src : ph;
+    return im;
+  }
+  const altFor = (a, kind) => {
+    const who = [a.title, str(a.subject)].filter(Boolean).join(" — ");
+    if (a.digitalState === "planned" && kind === "digital") return "Placeholder for planned artwork: " + who;
+    return (kind === "canvas" ? "Photograph of the canvas painting: " : "Digital drawing: ") + who;
+  };
+
+  /* ---------- inquiries ---------- */
+  const email = safeUrl("mailto:" + str(CONFIG.email), true) && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(str(CONFIG.email)) ? str(CONFIG.email) : "";
+  const formAction = safeUrl(CONFIG.inquiryForm && CONFIG.inquiryForm.action);
+  function mailto(subject, body) {
+    return "mailto:" + email + "?subject=" + encodeURIComponent(subject) + (body ? "&body=" + encodeURIComponent(body) : "");
+  }
+  function inquireBtn(a, k, cls) {
+    if (!email) return null;
+    const what = k ? fmtLabel(a, k) : "this artwork";
+    return h("a", { class: "btn ghost " + (cls || ""), href: mailto("Inquiry: " + a.title + (k ? " (" + what + ")" : ""), "Hello,\n\nI'm interested in \"" + a.title + "\"" + (k ? " — " + what : "") + ".\n\n") }, "Inquire");
+  }
+
+  /* ---------- state ---------- */
+  const state = { filter: "all", q: "", sort: "curated" };
+  const isOriginal = a => a.canvasState === "ready" && a.offered.includes("originalCanvas") && effStatus(a, "originalCanvas") !== "sold";
+  const isPrint = a => ["canvasPrint", "artPrint", "other"].some(k => a.offered.includes(k));
+  const FILTERS = [];
+  function buildFilters() {
+    FILTERS.length = 0;
+    FILTERS.push({ key: "all", label: "All Artwork", test: () => true });
+    const cats = [];
+    ART.forEach(a => { if (a.category && !cats.includes(a.category)) cats.push(a.category); });
+    const order = Object.keys(CAT_LABELS);
+    cats.sort((x, y) => (order.indexOf(x) < 0 ? 99 : order.indexOf(x)) - (order.indexOf(y) < 0 ? 99 : order.indexOf(y)));
+    cats.forEach(c => FILTERS.push({ key: "cat:" + c, label: catLabel(c), test: a => a.category === c, cat: true }));
+    FILTERS.push({ key: "originals", label: "Available Originals", test: isOriginal });
+    FILTERS.push({ key: "prints", label: "Prints & Editions", test: isPrint });
+    for (let i = FILTERS.length - 1; i > 0; i--) if (!ART.some(FILTERS[i].test)) FILTERS.splice(i, 1);
+  }
+  const filterByKey = k => FILTERS.find(f => f.key === k) || FILTERS[0];
+
+  function visible() {
+    const f = filterByKey(state.filter);
+    const toks = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    let list = ART.filter(f.test).filter(a => {
+      if (!toks.length) return true;
+      const hay = [a.title, a.subject, a.category, catLabel(a.category), a.description, a.medium, a.id, a.tags.join(" ")].join(" ").toLowerCase();
+      return toks.every(t => hay.includes(t));
+    });
+    const s = state.sort;
+    if (s === "title") list.sort((x, y) => x.title.localeCompare(y.title, undefined, { numeric: true }));
+    else if (s === "newest") list.sort((x, y) => (str(y.added) || str(y.year)).localeCompare(str(x.added) || str(x.year)) || y._i - x._i);
+    else if (s === "price-asc" || s === "price-desc") {
+      list.sort((x, y) => {
+        const px = minPrice(x), py = minPrice(y);
+        if (px == null && py == null) return x._i - y._i;
+        if (px == null) return 1; if (py == null) return -1;
+        return s === "price-asc" ? px - py : py - px;
+      });
+    }
+    return list;
+  }
+
+  /* ---------- card ---------- */
+  function badge(status) { return h("span", { class: "badge s-" + status }, STATUS[status].label); }
+  function buyLinks(a) {
+    const out = [];
+    a.offered.forEach(k => {
+      const st = effStatus(a, k), url = safeUrl(a.purchaseLinks[k]);
+      if (STATUS[st].buy && url) out.push({ k, url });
+    });
+    return out;
+  }
+  function card(a) {
+    const open = () => openDetail(a.id);
+    const pr = a.status === "contact-for-price" ? "Contact for price" : priceSummary(a);
+    const links = buyLinks(a);
+    const actions = h("div", { class: "card-actions" }, h("button", { class: "btn sm", type: "button", onclick: open, "aria-label": "View artwork: " + a.title }, "View Artwork"));
+    if (a.status === "sold") actions.append(h("button", { class: "btn sm", type: "button", disabled: true }, "Sold"));
+    else if (links.length === 1) actions.append(h("a", { class: "btn ghost sm", href: links[0].url, target: "_blank", rel: "noopener noreferrer", "aria-label": "Purchase " + a.title + " (opens in a new tab)" }, "Purchase"));
+    else if (links.length > 1) actions.append(h("button", { class: "btn ghost sm", type: "button", onclick: open }, "Purchase options"));
+    else { const q = inquireBtn(a, null, "sm"); if (q) actions.append(q); }
+    const sub = [str(a.subject)].filter(Boolean)[0];
+    return h("article", { class: "card" },
+      h("button", { class: "card-media", type: "button", onclick: open, "aria-label": "Open " + a.title }, artImg(a, "digital", altFor(a, "digital"))),
+      h("div", { class: "card-body" },
+        h("div", { class: "kicker" }, [catLabel(a.category), a.group === "early" ? "Earlier work" : ""].filter(Boolean).join(" · ")),
+        h("h3", null, a.title),
+        sub && h("div", { class: "subject" }, sub),
+        h("div", { class: "meta" }, workLine(a) + (str(a.dimensions) ? " · " + a.dimensions : "")),
+        formatsLine(a) && h("div", { class: "meta" }, formatsLine(a)),
+        pr && h("div", { class: "price" }, pr),
+        badge(a.status),
+        actions));
+  }
+
+  /* ---------- gallery render ---------- */
+  function renderChips() {
+    const box = clear($("#chips"));
+    FILTERS.forEach(f => {
+      const n = ART.filter(f.test).length;
+      box.append(h("button", { class: "chip", type: "button", "aria-pressed": String(state.filter === f.key), onclick: () => setFilter(f.key) }, f.label, h("small", null, "(" + n + ")")));
+    });
+  }
+  function renderGrid() {
+    const list = visible(), grid = clear($("#grid"));
+    list.forEach(a => grid.append(card(a)));
+    $("#empty").hidden = list.length > 0;
+    $("#count").textContent = list.length + (list.length === 1 ? " artwork" : " artworks");
+  }
+  function setFilter(key, scroll) {
+    state.filter = filterByKey(key).key;
+    renderChips(); renderGrid(); markNav();
+    if (scroll) $("#gallery").scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth" });
+  }
+
+  /* ---------- nav ---------- */
+  function buildNav() {
+    const nav = clear($("#nav"));
+    const add = (label, href, filter) => nav.append(h("a", { href: href, "data-filter": filter || null, onclick: e => {
+      $("#nav").classList.remove("open"); $("#navToggle").setAttribute("aria-expanded", "false");
+      if (filter) { e.preventDefault(); setFilter(filter, true); if (history.replaceState) history.replaceState(null, "", "#gallery"); }
+    } }, label));
+    add("Collection", "#collection");
+    FILTERS.forEach(f => add(f.label, "#gallery", f.key));
+    add("About the Artist", "#artist");
+    add("Contact / Inquiries", "#contact");
+  }
+  function markNav() {
+    document.querySelectorAll("#nav a[data-filter]").forEach(a => a.setAttribute("aria-current", String(a.dataset.filter === state.filter && state.filter !== "all")));
+  }
+
+  /* ---------- hero, intro, artist, contact, footer ---------- */
+  function buildStatic() {
+    const C = CONFIG;
+    // wordmark
+    const wm = clear($("#wordmark"));
+    if (str(C.logo)) wm.append(h("img", { src: C.logo, alt: C.studioName + " — " + C.collectionName }));
+    else wm.append(h("span", { class: "wm-studio" }, C.studioName), h("span", { class: "wm-rule", "aria-hidden": "true" }), h("span", { class: "wm-coll" }, C.collectionName));
+    // hero text
+    $("#hero-eyebrow").textContent = C.heroEyebrow;
+    $("#hero-title").textContent = C.collectionName;
+    $("#hero-lede").textContent = C.collectionTagline;
+    $("#hero-by").textContent = "By " + C.studioName + " · " + C.artistName;
+    const acts = clear($("#hero-actions"));
+    acts.append(h("a", { class: "btn", href: "#gallery", onclick: e => { e.preventDefault(); setFilter("all", true); } }, "Explore the Collection"));
+    const availKey = FILTERS.some(f => f.key === "originals") ? "originals" : (FILTERS.some(f => f.key === "prints") ? "prints" : "all");
+    acts.append(h("a", { class: "btn ghost", href: "#gallery", onclick: e => { e.preventDefault(); setFilter(availKey, true); } }, "Available Artwork"));
+    // intro
+    $("#intro-title").textContent = "From drawing to canvas";
+    const it = clear($("#intro-text")); (C.introParagraphs || []).forEach(p => it.append(h("p", null, p)));
+    const gl = clear($("#glance"));
+    const stat = (n, l) => n > 0 && gl.append(h("div", null, h("b", null, String(n)), l));
+    stat(ART.length, "Artworks");
+    stat(ART.filter(a => a.canvasState === "ready").length, "Canvas paintings");
+    stat(ART.filter(a => a.canvasState === "planned").length, "Canvas planned");
+    const pr = clear($("#process"));
+    (C.process || []).forEach((s, i) => pr.append(h("li", null, h("span", { class: "n" }, String(i + 1)), h("div", null, h("strong", null, s.title), h("span", { class: "d" }, s.text)))));
+    // artist
+    $("#artist-title").textContent = C.studioName;
+    const pt = clear($("#portrait"));
+    const pim = h("img", { alt: "Portrait of " + C.artistName, loading: "lazy" });
+    pim.addEventListener("error", () => { pim.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><rect width="800" height="1000" fill="#e4dccb"/><g font-family="Arial,sans-serif" text-anchor="middle" fill="#1e1e1b"><text x="400" y="490" font-size="30" font-weight="700" letter-spacing="4">TEMPORARY PLACEHOLDER</text><text x="400" y="535" font-size="24" fill="#4a4a44">Artist portrait or studio photo</text><text x="400" y="575" font-size="20" fill="#5d6665">' + esc(C.artistImage || "images/artist.jpg") + "</text></g></svg>"); }, { once: true });
+    pim.src = str(C.artistImage) || "images/artist.jpg";
+    pt.append(pim);
+    const bio = clear($("#bio")); (C.artistBio || []).forEach(p => bio.append(h("p", null, p)));
+    const ml = safeUrl(C.mainSiteUrl), al = clear($("#artist-link"));
+    if (ml) al.append(h("a", { class: "btn ghost", href: ml, target: "_blank", rel: "noopener noreferrer" }, C.mainSiteLabel || "Main art website"));
+    // contact
+    const types = [
+      ["Purchase inquiry", "Ask about an original canvas, a print, or availability.", "Artwork purchase inquiry"],
+      ["Commissions", "Discuss a commissioned drawing or painting.", "Commission inquiry"],
+      ["Commercial licensing", "Licensing artwork for products, editorial or branding.", "Licensing inquiry"],
+      ["Gallery & exhibition", "Showing the collection in a gallery or exhibition.", "Gallery / exhibition inquiry"],
+      ["Wholesale & business", "Business, wholesale or trade inquiries.", "Wholesale / business inquiry"]
+    ];
+    const ig = clear($("#inqGrid"));
+    types.forEach(t => ig.append(h("div", { class: "inq" }, h("h3", null, t[0]), h("p", null, t[1]),
+      email ? h("a", { class: "btn sm", href: mailto(t[2] + " — " + C.collectionName, "Hello,\n\n") }, "Email about this") : null)));
+    const ex = clear($("#inqExtra"));
+    if (!email && !formAction) ex.append(h("div", { class: "notice", role: "note" }, "Contact details are being added to this site. Please check back soon, or reach out through the main art website."));
+    if (formAction) {
+      const f = h("form", { class: "form", action: formAction, method: "POST" },
+        h("h3", { style: "font-size:1.4rem" }, "Send a message"),
+        h("label", null, "Your name", h("input", { name: "name", required: true, autocomplete: "name" })),
+        h("label", null, "Your email", h("input", { name: "email", type: "email", required: true, autocomplete: "email" })),
+        h("label", null, "Type of inquiry", h("select", { name: "inquiry_type" }, types.map(t => h("option", { value: t[0] }, t[0])))),
+        h("label", null, "Message", h("textarea", { name: "message", required: true })),
+        h("button", { class: "btn", type: "submit" }, "Send message"));
+      ex.append(f);
+    }
+    // footer
+    const fg = clear($("#footGrid"));
+    const col = (title, items) => items.length ? h("div", null, h("h4", null, title), h("ul", null, items.map(i => h("li", null, i)))) : null;
+    fg.append(h("div", null, h("div", { class: "wm-studio", style: "margin-bottom:.6rem" }, C.studioName), h("div", { class: "wm-coll", style: "margin-bottom:1rem" }, C.collectionName), h("p", { style: "font-size:.9rem;opacity:.8;max-width:26em" }, "Original wildlife and creature artwork by " + C.artistName + ".")));
+    const cl = [h("a", { href: "#collection" }, "Collection")].concat(FILTERS.map(f => h("a", { href: "#gallery", onclick: e => { e.preventDefault(); setFilter(f.key, true); } }, f.label)));
+    fg.append(col("Collection", cl));
+    const more = [];
+    if (email) more.push(h("a", { href: "mailto:" + email }, email));
+    more.push(h("a", { href: "#contact" }, "Inquiries"));
+    if (safeUrl(C.shopUrl)) more.push(h("a", { href: safeUrl(C.shopUrl), target: "_blank", rel: "noopener noreferrer" }, "Shop"));
+    fg.append(col("Contact & Shop", more));
+    const links = [];
+    if (ml) links.push(h("a", { href: ml, target: "_blank", rel: "noopener noreferrer" }, C.mainSiteLabel || "Main art website"));
+    (C.social || []).forEach(s => { const u = safeUrl(s && s.url); if (u) links.push(h("a", { href: u, target: "_blank", rel: "noopener noreferrer" }, str(s.label) || u)); });
+    (C.relatedCollections || []).forEach(s => { const u = safeUrl(s && s.url); if (u) links.push(h("a", { href: u, target: "_blank", rel: "noopener noreferrer" }, str(s.label) || u)); });
+    fg.append(col("Elsewhere", links));
+    $("#copyright").textContent = "© " + C.copyrightYear + " " + C.studioName + " / " + C.artistName + ". All artwork rights reserved.";
+  }
+
+  function buildHeroMedia() {
+    const box = clear($("#hero-media"));
+    const collage = () => {
+      const pick = ART.filter(a => a.featured).concat(ART.filter(a => !a.featured)).filter(a => a.digitalState !== "planned").slice(0, 3);
+      if (!pick.length) { box.append(h("div", { class: "hero-single" }, h("img", { alt: "", src: placeholder({ ratio: "4/5", digitalState: "ready" }, "digital", "images/hero.jpg") }))); return; }
+      const wrap = h("div", { class: "plates" });
+      pick.forEach((a, i) => wrap.append(h("figure", { class: "plate", style: "margin:0" }, h("div", { class: "frame" }, artImg(a, "digital", altFor(a, "digital"), true)), h("figcaption", null, "Plate " + String(i + 1).padStart(2, "0")))));
+      box.append(wrap);
+    };
+    const src = str(CONFIG.heroImage);
+    if (!src) return collage();
+    const probe = new Image();
+    probe.onload = () => box.append(h("div", { class: "hero-single" }, h("img", { src: src, alt: CONFIG.collectionName + " — featured artwork by " + CONFIG.studioName, width: probe.naturalWidth, height: probe.naturalHeight })));
+    probe.onerror = collage;
+    probe.src = src;
+  }
+
+  function buildFeatured() {
+    const f = ART.filter(a => a.featured), sec = $("#featured");
+    sec.hidden = !f.length;
+    const g = clear($("#featGrid")); f.forEach(a => g.append(card(a)));
+  }
+
+  /* ---------- dialogs ---------- */
+  let lastFocus = null, view = "digital";
+  const detail = $("#detail"), lightbox = $("#lightbox");
+  const lockScroll = () => { document.body.style.overflow = document.querySelectorAll("dialog[open]").length ? "hidden" : ""; };
+  const baseTitle = document.title;
+
+  function openDetail(id) {
+    lastFocus = document.activeElement;
+    if (location.hash !== "#art=" + encodeURIComponent(id)) location.hash = "art=" + encodeURIComponent(id);
+    else showDetail(byId(id));
+  }
+  function figure(a, kind, label) {
+    const im = artImg(a, kind, altFor(a, kind), true);
+    const trigger = h("button", { type: "button", "aria-label": "Enlarge image: " + label, onclick: () => openLightbox(a, kind, label, im) }, im);
+    return h("figure", { class: "dt-fig" }, trigger, h("figcaption", null, label));
+  }
+  function related(a) {
+    const scored = ART.filter(o => o.id !== a.id).map(o => {
+      let s = 0; o.tags.forEach(t => { if (a.tags.includes(t)) s += 2; });
+      if (o.category && o.category === a.category) s += 3;
+      if (o.group === a.group) s += 1;
+      return { o, s };
+    }).sort((x, y) => y.s - x.s || x.o._i - y.o._i).slice(0, 4);
+    return scored.map(x => x.o);
+  }
+  function showDetail(a) {
+    if (!a) return;
+    view = hasCanvasPhoto(a) ? "side" : "digital";
+    const body = h("div", { class: "dt" });
+    const media = h("div", null), info = h("div", null);
+    function renderMedia() {
+      clear(media);
+      if (hasCanvasPhoto(a)) {
+        media.append(h("div", { class: "dt-views", role: "group", "aria-label": "Choose view" },
+          [["digital", "Digital drawing"], ["canvas", "Canvas painting"], ["side", "Side by side"]].map(v =>
+            h("button", { class: "chip", type: "button", "aria-pressed": String(view === v[0]), onclick: () => { view = v[0]; renderMedia(); } }, v[1]))));
+      }
+      const figs = h("div", { class: "dt-figs" + (view === "side" && hasCanvasPhoto(a) ? " two" : "") });
+      const dLabel = a.digitalState === "planned" ? "Planned artwork — digital drawing not yet made" : "Digital drawing (original artwork)";
+      if (!hasCanvasPhoto(a) || view !== "canvas") figs.append(figure(a, "digital", dLabel));
+      if (hasCanvasPhoto(a) && view !== "digital") figs.append(figure(a, "canvas", "Photograph of the finished canvas painting"));
+      media.append(figs);
+      if (a.canvasState === "planned") media.append(h("p", { class: "meta", style: "margin-top:.8rem" }, "A canvas version of this artwork is planned and has not been painted yet."));
+    }
+    renderMedia();
+    const dl = h("dl", { class: "dl" });
+    const row = (k, v) => str(v) && dl.append(h("dt", null, k), h("dd", null, v));
+    row("Artist", CONFIG.studioName + " (" + CONFIG.artistName + ")");
+    row("Subject", a.subject); row("Category", catLabel(a.category)); row("Year", a.year);
+    row("Work", workLine(a)); row("Medium", a.medium);
+    row(a.canvasState === "ready" ? "Size" : "Size (planned/digital)", a.dimensions);
+    row("Series", a.group === "early" ? "Earlier work (before the series)" : "");
+    info.append(h("p", { class: "kicker" }, catLabel(a.category)), h("h2", { id: "dt-title" }, a.title), badge(a.status));
+    if (str(a.description)) info.append(h("p", { style: "margin-top:1rem;font:400 1.08rem/1.7 var(--serif);color:var(--ink-2)" }, a.description));
+    info.append(dl);
+    info.append(h("h3", { style: "font-size:1.2rem;margin:1.4rem 0 .8rem" }, "Formats & availability"));
+    if (!a.offered.length) {
+      info.append(h("p", { class: "meta" }, a.status === "coming-soon" ? "Not yet available." : "No formats are listed for this artwork yet."));
+      const q = inquireBtn(a, null); if (q) info.append(q);
+    }
+    a.offered.forEach(k => {
+      const st = effStatus(a, k), url = safeUrl(a.purchaseLinks[k]);
+      const price = st === "contact-for-price" ? "Contact for price" : money(a.prices[k]);
+      const top = h("div", { class: "fmt-top" }, h("strong", null, fmtLabel(a, k)), price && h("span", { class: "price" }, price));
+      const box = h("div", { class: "fmt" }, top, badge(st));
+      if (st === "sold") box.append(h("button", { class: "btn sm", type: "button", disabled: true }, "Sold"));
+      else if (STATUS[st].buy && url) box.append(h("a", { class: "btn sm", href: url, target: "_blank", rel: "noopener noreferrer" }, "Purchase", h("span", { class: "sr-only" }, " " + fmtLabel(a, k) + " (opens in a new tab)")));
+      else { const q = inquireBtn(a, k, "sm"); if (q) box.append(q); else box.append(h("span", { class: "meta" }, "Contact details are being added.")); }
+      info.append(box);
+    });
+    body.append(media, info);
+    const rel = related(a);
+    if (rel.length) {
+      const g = h("div", { class: "rel-grid" });
+      rel.forEach(o => g.append(h("button", { class: "rel", type: "button", onclick: () => { location.hash = "art=" + encodeURIComponent(o.id); detail.scrollTo(0, 0); } },
+        h("span", { class: "t" }, artImg(o, "digital", altFor(o, "digital"))), h("span", { class: "n" }, o.title))));
+      body.append(h("div", { class: "related" }, h("h3", { style: "font-size:1.2rem" }, "Related artwork"), g));
+    }
+    clear(detail).append(h("button", { class: "dlg-close", type: "button", onclick: () => detail.close(), "aria-label": "Close artwork details" }, "Close ✕"), body);
+    detail.setAttribute("aria-labelledby", "dt-title"); detail.removeAttribute("aria-label");
+    if (!detail.open) detail.showModal();
+    detail.scrollTo(0, 0); lockScroll();
+    document.title = a.title + " — " + CONFIG.collectionName + " | " + CONFIG.studioName;
+  }
+  function openLightbox(a, kind, label, srcImg) {
+    const im = h("img", { alt: altFor(a, kind), src: srcImg.currentSrc || srcImg.src, onclick: () => lightbox.close() });
+    clear(lightbox).append(h("button", { class: "dlg-close", type: "button", onclick: () => lightbox.close() }, "Close ✕"),
+      h("div", { class: "lb" }, im, h("p", null, a.title + " — " + label)));
+    lightbox.showModal(); lockScroll();
+  }
+  [detail, lightbox].forEach(d => d.addEventListener("click", e => { if (e.target === d) d.close(); }));
+  lightbox.addEventListener("close", () => { lockScroll(); });
+  detail.addEventListener("close", () => {
+    lockScroll(); document.title = baseTitle;
+    if (/^#art=/.test(location.hash) && history.replaceState) history.replaceState(null, "", location.pathname + location.search);
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+  });
+  function route() {
+    const m = location.hash.match(/^#art=([^&]+)/);
+    if (m) { let id = ""; try { id = decodeURIComponent(m[1]); } catch (e) {} const a = byId(id); if (a) showDetail(a); }
+    else if (detail.open) detail.close();
+  }
+  window.addEventListener("hashchange", route);
+
+  /* ---------- structured data & meta ---------- */
+  function buildSEO() {
+    const base = safeUrl(CONFIG.siteUrl) || location.href.split("#")[0];
+    const abs = p => { try { return new URL(p, base).href; } catch (e) { return ""; } };
+    const works = ART.filter(a => a.digitalState !== "planned" && str(a.digitalImage)).map(a => {
+      const o = { "@type": "VisualArtwork", name: a.title, creator: { "@type": "Person", name: CONFIG.artistName, alternateName: CONFIG.studioName }, image: abs(a.digitalImage), artform: str(a.medium) || "Digital drawing", url: abs("#art=" + encodeURIComponent(a.id)) };
+      if (str(a.description)) o.description = a.description;
+      if (str(a.year)) o.dateCreated = a.year;
+      return o;
+    });
+    const data = { "@context": "https://schema.org", "@type": "CollectionPage", name: CONFIG.collectionName + " — " + CONFIG.studioName, description: CONFIG.collectionTagline, author: { "@type": "Person", name: CONFIG.artistName, alternateName: CONFIG.studioName }, hasPart: works };
+    $("#ld-json").textContent = JSON.stringify(data);
+    if (safeUrl(CONFIG.siteUrl)) {
+      const add = (tag, attrs) => document.head.append(h(tag, attrs));
+      add("link", { rel: "canonical", href: safeUrl(CONFIG.siteUrl) });
+      add("meta", { property: "og:url", content: safeUrl(CONFIG.siteUrl) });
+      if (str(CONFIG.ogImage)) add("meta", { property: "og:image", content: abs(CONFIG.ogImage) });
+    }
+  }
+
+  /* ---------- wire up ---------- */
+  function init() {
+    buildFilters(); buildNav(); buildStatic(); buildHeroMedia(); buildFeatured();
+    $("#q").addEventListener("input", e => { state.q = e.target.value; renderGrid(); });
+    $("#sort").addEventListener("change", e => { state.sort = e.target.value; renderGrid(); });
+    $("#reset").addEventListener("click", () => { state.q = ""; $("#q").value = ""; $("#sort").value = state.sort = "curated"; setFilter("all"); });
+    $("#navToggle").addEventListener("click", () => { const o = $("#nav").classList.toggle("open"); $("#navToggle").setAttribute("aria-expanded", String(o)); });
+    const tt = $("#totop");
+    window.addEventListener("scroll", () => tt.classList.toggle("show", window.scrollY > 700), { passive: true });
+    tt.addEventListener("click", () => window.scrollTo({ top: 0, behavior: reduceMotion() ? "auto" : "smooth" }));
+    setFilter("all"); buildSEO(); route();
+    // Gentle reminders in the console for launch
+    const miss = [];
+    if (!email && !formAction) miss.push("contact email or form");
+    if (!safeUrl(CONFIG.siteUrl)) miss.push("CONFIG.siteUrl");
+    ART.forEach(a => { if (!buyLinks(a).length && a.offered.length && a.status !== "sold") miss.push("purchase link: " + a.id); });
+    if (miss.length) console.info("[Field Notes] Still to add before launch:", miss.join(", "));
+  }
+  init();
+})();
+</script>
+</body>
+</html>
